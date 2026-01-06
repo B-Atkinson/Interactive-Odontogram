@@ -1,0 +1,39 @@
+/* default state */
+.tooth .selected {
+    display: none;
+}
+
+.tooth .base {
+    display: block;
+}
+
+/* selected teeth show highlight instead */
+.tooth[data-selected="true"] .selected {
+    display: block !important; /* Try with !important */
+}
+
+.tooth[data-selected="true"] .base {
+    display: none !important; /* Try with !important */
+}
+
+.quadrant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.quadrant-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quadrant-button {
+    background-color: rgba(50,177,236,0.7);
+    border-radius: 2px;
+    fill: rgba(50,177,236,0.7);
+    width: 16px;
+}

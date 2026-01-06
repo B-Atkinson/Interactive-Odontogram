@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Language & Environment */
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    /* Module System */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    /* Strictness (this is where linting really benefits) */
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    /* JS Interop */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    /* Emit / Build */
+    "noEmit": true,
+    "isolatedModules": true,
+    /* Developer Ergonomics */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    /* Types */
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "src/**/*",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
